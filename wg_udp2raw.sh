@@ -5,12 +5,12 @@ passwd=$(date | md5sum  | head -c 6)
 
 # 端口参数, 为了简单好用，请下载脚本自编辑修改
 wg_port=$(wg | grep 'listening port:' | awk '{print $3}')
-raw_port=2999
-speed_port=8888
+raw_port=12999
+speed_port=18888
 serverip=$(curl -4 ip.sb)
 
-ss_raw_port=1999
-kcp_port=4000
+ss_raw_port=11999
+kcp_port=14000
 
 ########################################################
 clear
